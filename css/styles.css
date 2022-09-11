@@ -37,7 +37,7 @@
 .body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -56,7 +56,6 @@ img{
 .link {
   text-decoration: none;
   font-style: normal;
-  display:inline-block
 }
 .visually-hidden {
   position: absolute;
@@ -75,7 +74,7 @@ img{
 .logo {
   color: var(--accent-color);
 
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -96,13 +95,38 @@ img{
 
   outline: 2px solid tomato;
 }
+/* header */
+.header{
+  border-bottom: 1px solid #ECECEC;;
+}
+/* main-nav */
+.main-nav,
+.navigation{
+  display:flex;
+  align-items: center;
+}
+
 /* site nav */
+.site-nav{
+  display:flex;
+  margin-left: 93px;
+}
+
+.site-nav .item:not(:last-child){
+  margin-right: 50px;
+}
+/* site nav link*/
 .site-nav .link {
   color: var(--title-text-color);
+ 
 }
 
 .site-nav .link,
 .auth-nav .link {
+  display:block;
+  padding-top: 32px;
+    padding-bottom: 32px;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -117,6 +141,15 @@ img{
 .site-nav .link.current {
   color: var(--accent-color);
 }
+
+/* auth nav */
+.auth-nav{
+  display:flex;
+  margin-left: auto;
+}
+.auth-nav .item:not(:last-child){
+  margin-right: 50px;
+}
 .auth-nav .link {
   color: var(--primary-text-color);
 }
@@ -129,7 +162,11 @@ img{
   outline: 2px solid tomato;
 }
 .hero-title {
+  margin:auto;
   margin-bottom: 30px;
+  max-width:700px;
+  
+ 
   color: var(--primary-white-color);
 
   font-weight: 900;
@@ -178,6 +215,13 @@ padding-bottom: 94px;
 }
 
 /* advantages */
+.advantage-list{
+  display:flex;
+}
+.advantage-list .item{
+  max-width:270 px;
+  justify-content: space-between;
+}
 .advantage-list .title {
   margin-bottom:10px;
   
@@ -219,6 +263,7 @@ background-color: var(--secondary-bg-color);
 }
 
 .footer-page .logo{
+  display:inline-block;
   margin-bottom: 20px;
 }
 
