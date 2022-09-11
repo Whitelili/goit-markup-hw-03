@@ -11,36 +11,41 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"/>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
-      <nav>
-        <a href="./index.html" class="logo link">Web<span class="logo-black">Studio</span></a>
-        <ul class="site-nav list">
+    <header class="header">
+      <div class="container">
+        <nav>
+          <a href="./index.html" class="logo link">Web<span class="logo-black">Studio</span></a>
+          <ul class="site-nav list">
+            <li>
+              <a href="./index.html" class="link current">Студія</a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="link">Портфоліо</a>
+            </li>
+            <li>
+              <a href="" class="link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="auth-nav list">
           <li>
-            <a href="./index.html" class="link">Студія</a>
+            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
           </li>
           <li>
-            <a href="./portfolio.html" class="link current">Портфоліо</a>
-          </li>
-          <li>
-            <a href="" class="link">Контакти</a>
+            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
           </li>
         </ul>
-      </nav>
-      <ul class="auth-nav list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <!--Projects-->
-      <section>
+      <section class="section">
+       <div class="container">
         <h1 class="visually-hidden">Наші проєкти</h1>
         <!--Buttons-->
         <ul class="button list">
@@ -48,7 +53,7 @@
             <button type="button" class="button-list">Усі</button>
           </li>
           <li>
-            <button type="button" class="button-list">Веб-сайти</button>
+            <button type="button" class="button-list">Веб-сайт</button>
           </li>
           <li>
             <button type="button" class="button-list">Додатки</button>
@@ -64,136 +69,95 @@
         <ul class="project list">
           <li class="project-item">
             <a href="" class="link">
-              <img
-                src="./img/portfolio-projects-view/website-tehnokryak-project.jpg"
-                alt=" Фото проєкту веб-сайта Технокряк"
-                width="370"
-                height="294"
-              />
+              <img src="./img/portfolio-projects-view/website-tehnokryak-project.jpg" alt=" Фото проєкту веб-сайта Технокряк"
+                width="370" height="294" />
               <h2 class="title">Технокряк</h2>
               <p class="text">Веб-сайт</p>
             </a>
           </li>
           <li class="project-item">
             <a href="" class="link">
-              <img
-                src="./img/portfolio-projects-view/poster-project.jpg"
-                alt="Фото проєкту постеру"
-                width="370"
-                height="294"
-              />
+              <img src="./img/portfolio-projects-view/poster-project.jpg" alt="Фото проєкту постеру" width="370" height="294" />
               <h2 class="title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
               <p class="text">Дизайн</p>
             </a>
           </li>
           <li class="project-item">
             <a href="" class="link">
-              <img
-                src="./img/portfolio-projects-view/seafood-project.jpg"
-                alt="Фото проекту ретсорана Seafood"
-                width="370"
-                height="294"
-              />
+              <img src="./img/portfolio-projects-view/seafood-project.jpg" alt="Фото проекту ретсорана Seafood" width="370"
+                height="294" />
               <h2 class="title">Ресторан <span lang="en">Seafood</span></h2>
               <p class="text">Додаток</p>
             </a>
           </li>
           <li class="project-item">
             <a href="" class="link">
-              <img
-                src="./img/portfolio-projects-view/prime-project.jpg"
-                alt="Фото проєкту Prime"
-                width="370"
-                height="294"
-              />
+              <img src="./img/portfolio-projects-view/prime-project.jpg" alt="Фото проєкту Prime" width="370" height="294" />
               <h2 class="title">Проєкт <span lang="en">Prime</span></h2>
               <p class="text">Маркетинг</p>
             </a>
           </li>
           <li class="project-item">
             <a href="" class="link">
-              <img
-                src="./img/portfolio-projects-view/boxes-project.jpg"
-                alt="Фото проєкту додатка Boxes"
-                width="370"
-                height="294"
-              />
+              <img src="./img/portfolio-projects-view/boxes-project.jpg" alt="Фото проєкту додатка Boxes" width="370"
+                height="294" />
               <h2 class="title">Проєкт <span lang="en">Boxes</span></h2>
               <p class="text">Додаток</p>
             </a>
           </li>
           <li class="project-item">
             <a href="" class="link">
-              <img
-                src="./img/portfolio-projects-view/inspiration-has-no-borders-project.jpg"
-                alt="Фото проєкту веб-сайта Inspiration has no borders"
-                width="370"
-                height="294"
-              />
+              <img src="./img/portfolio-projects-view/inspiration-has-no-borders-project.jpg"
+                alt="Фото проєкту веб-сайта Inspiration has no borders" width="370" height="294" />
               <h2 lang="en" class="title">Inspiration has no Borders</h2>
               <p class="text">Веб-сайт</p>
             </a>
           </li>
           <li class="project-item">
             <a href="" class="link">
-              <img
-                src="./img/portfolio-projects-view/limited-edition-project.jpg"
-                alt="Фото проєкту видання Limited edition"
-                width="370"
-                height="294"
-              />
+              <img src="./img/portfolio-projects-view/limited-edition-project.jpg" alt="Фото проєкту видання Limited edition"
+                width="370" height="294" />
               <h2 class="title">Видання <span lang="en">Limited Edition</span></h2>
               <p class="text">Дизайн</p>
             </a>
           </li>
           <li class="project-item">
             <a href="" class="link">
-              <img
-                src="./img/portfolio-projects-view/lab-project.jpg"
-                alt="Фото проєкту Lab"
-                width="370"
-                height="294"
-              />
+              <img src="./img/portfolio-projects-view/lab-project.jpg" alt="Фото проєкту Lab" width="370" height="294" />
               <h2 class="title">Проєкт <span lang="en">LAB</span></h2>
               <p class="text">Маркетинг</p>
             </a>
           </li>
           <li class="project-item">
             <a href="" class="link">
-              <img
-                src="./img/portfolio-projects-view/growing-business-project.jpg"
-                alt="Фото проєкту додатка Growing business"
-                width="370"
-                height="294"
-              />
+              <img src="./img/portfolio-projects-view/growing-business-project.jpg" alt="Фото проєкту додатка Growing business"
+                width="370" height="294" />
               <h2 lang="en" class="title">Growing Business</h2>
               <p class="text">Додаток</p>
             </a>
           </li>
         </ul>
+       </div>
       </section>
     </main>
     <footer class="footer-page">
-      <a href="./index.html" class="logo link">Web<span class="logo-white">Studio</span></a>
-      <address>
-        <ul class="list">
-          <li>
-            <a
-              href="https://goo.gl/maps/879WaUZSCeZe2CB97"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              class="footer-adress link"
-              >м. Київ, пр-т Лесі Українки, 26</a
-            >
-          </li>
-          <li>
-            <a href="mailto:info@devstudio.com" class="footer-mail link">info@devstudio.com</a>
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="footer-tel link">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </address>
+      <div class="container">
+        <a href="./index.html" class="logo link">Web<span class="logo-white">Studio</span></a>
+        <address>
+          <ul class="list">
+            <li class="list-item">
+              <a href="https://goo.gl/maps/879WaUZSCeZe2CB97" target="_blank" rel="noopener noreferrer nofollow"
+                class="footer-adress link">м. Київ, пр-т Лесі Українки, 26</a>
+            </li>
+            <li class="list-item">
+              <a href="mailto:info@devstudio.com" class="footer-mail link">info@devstudio.com</a>
+            </li>
+            <li class="list-item">
+              <a href="tel:+380961111111" class="footer-tel link">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>

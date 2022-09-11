@@ -42,12 +42,21 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+h1,h2,h3,h4,h5,h6,p,ul{
+margin: 0;
+padding:0;
+}
+
+img{
+  display:block;
+}
 .list {
   list-style: none;
 }
 .link {
   text-decoration: none;
   font-style: normal;
+  display:inline-block
 }
 .visually-hidden {
   position: absolute;
@@ -78,6 +87,15 @@
   color: var(--primary-white-color);
 }
 
+.container{
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 2px solid tomato;
+}
 /* site nav */
 .site-nav .link {
   color: var(--title-text-color);
@@ -106,18 +124,28 @@
 /* hero */
 .hero {
   background-color: var(--secondary-bg-color);
+  text-align: center;
+
+  outline: 2px solid tomato;
 }
 .hero-title {
+  margin-bottom: 30px;
   color: var(--primary-white-color);
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  
 }
 .hero-button {
+  display: inline-block;
+  border-radius: 4px;
+  padding:10px 32px;
+  min-width: 216px;
+    
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   cursor: pointer;
@@ -134,7 +162,13 @@
 }
 
 /* sections */
+.section{
+padding-top: 94px;
+padding-bottom: 94px;
+}
 .section-title {
+   margin-bottom: 50px;
+  
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -145,6 +179,8 @@
 
 /* advantages */
 .advantage-list .title {
+  margin-bottom:10px;
+  
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -153,12 +189,17 @@
 }
 
 /* what we do */
+.work{
+  padding-top:0;
+}
+
 /* our team */
 .team {
   background-color: var(--third-bg-color);
 }
 
 .team-title {
+  margin-bottom: 10px;
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -171,7 +212,21 @@
 }
 /* footer */
 .footer-page {
-  background-color: var(--secondary-bg-color);
+padding-top: 60px;
+padding-bottom: 60px;
+ 
+background-color: var(--secondary-bg-color);
+}
+
+.footer-page .logo{
+  margin-bottom: 20px;
+}
+
+.list-item{
+  margin-bottom: 9px;
+}
+.list-item:last-child{
+  margin-bottom: 0px;
 }
 .footer-adress {
   color: var(--primary-white-color);
@@ -194,7 +249,16 @@
 /* portfolio */
 
 /* buttons */
+.button{
+  margin-bottom: 50px;
+}
 .button-list {
+display: inline-block;
+border-radius: 4px;
+text-align: center;
+padding: 6px 22px;
+
+
   color: var(--title-text-color);
   background-color: var(--third-bg-color);
   cursor: pointer;
