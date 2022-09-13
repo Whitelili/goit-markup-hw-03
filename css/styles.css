@@ -33,7 +33,7 @@
   --secondary-bg-color: #2f303a;
   --third-bg-color: #f5f4fa;
   --border-header-color: #ececec;
-    --border-color: #eeeeee;
+  --border-color: #eeeeee;
   --card-set-gap: 30px;
 }
 /* body */
@@ -185,7 +185,7 @@ img {
 }
 .hero-button {
   border-radius: 4px;
-  border:none;
+  border: none;
   padding: 10px 32px;
   min-width: 216px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -272,19 +272,19 @@ img {
   width: 270px;
   margin-right: var(--card-set-gap);
   text-align: center;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  background-color: var(--primary-bg-color);
 }
 .team-icon:nth-child(4n) {
   margin-right: 0;
 }
 
 .icon-border {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
   padding-top: 30px;
   padding-bottom: 30px;
-  border-radius: 0px 0px 4px 4px;
-  
-  background-color: var(--primary-bg-color);
 }
 
 .team-title {
@@ -395,7 +395,10 @@ img {
 .project-about {
   padding: 20px 24px;
   border: 1px solid var(--border-color);
-  border-top:none;
+  border-top: none;
+}
+.project-about .title {
+  margin-bottom: 4px;
 }
 .project-item .title {
   color: var(--title-text-color);
